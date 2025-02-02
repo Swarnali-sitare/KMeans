@@ -35,23 +35,22 @@ def find_optimal_clusters(inertia_values):
     return optimal_k
 
 # Example Usage
-if __name__ == "__main__":
-    # Example dataset (5 data points, 2 features)
-    data = np.array([[1, 2], [1, 4], [1, 0], [10, 2], [10, 4]])
-    
-    # Example centroids (for k=2)
-    centroids = np.array([[1, 2], [10, 4]])
-    
-    # Example labels (which cluster each point belongs to)
-    labels = np.array([0, 0, 0, 1, 1])  # Cluster assignments for data points
-    
-    # Calculate inertia
-    inertia = calculate_inertia(data, centroids, labels)
-    print("Inertia:", inertia)
-    
-    # Example list of inertia values for k = 1 to 6
-    inertia_values = [1000, 800, 500, 300, 250, 200]
-    
-    # Find the optimal number of clusters
-    optimal_k = find_optimal_clusters(inertia_values)
-    print("Optimal number of clusters (k):", optimal_k)
+# Example dataset (5 data points, 2 features)
+data = np.array([[1, 2], [1, 4], [1, 0], [10, 2], [10, 4]])
+
+# Example centroids (for k=2)
+centroids = np.array([[1, 2], [10, 4]])
+
+# Example labels (which cluster each point belongs to)
+labels = np.array([0, 0, 0, 1, 1])  # Cluster assignments for data points
+
+# Calculate inertia
+inertia = calculate_inertia(data, centroids, labels)
+print("Inertia:", inertia)
+
+# Example list of inertia values for k = 1 to 6
+inertia_values = [1000, 800, 500, 300, 250, 200]
+
+# Find the optimal number of clusters
+optimal_k = find_optimal_clusters(inertia_values)
+print("Optimal number of clusters (k):", optimal_k)
