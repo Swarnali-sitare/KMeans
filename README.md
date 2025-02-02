@@ -5,3 +5,4 @@ Features
 K-Means Algorithm: Iteratively assigns points to clusters and updates centroids.
 Inertia Calculation: Computes the sum of squared distances for cluster evaluation.
 Elbow Method: Determines the optimal number of clusters by identifying the "elbow point" in the inertia curve.
+Silhouette method: It measures how well each point fits within its assigned K-Means cluster by comparing intra-cluster cohesion to inter-cluster separation, with scores ranging from -1 (misclassified) to 1 (well-clustered).
