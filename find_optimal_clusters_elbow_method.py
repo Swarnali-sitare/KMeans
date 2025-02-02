@@ -1,17 +1,6 @@
 import numpy as np
 
 def calculate_inertia(data, centroids, labels):
-    """
-    Calculate the inertia (sum of squared distances) for K-means clustering.
-    
-    Parameters:
-        data (numpy.ndarray): The dataset, a 2D array of shape (n_samples, n_features).
-        centroids (numpy.ndarray): The cluster centroids, a 2D array of shape (k, n_features).
-        labels (numpy.ndarray): The cluster labels for each data point, a 1D array of shape (n_samples,).
-    
-    Returns:
-        float: The inertia value.
-    """
     inertia = 0
     for i in range(len(data)):
         # Squared distance: (x1 - x2)^2 + (y1 - y2)^2 + ...
@@ -20,15 +9,6 @@ def calculate_inertia(data, centroids, labels):
     return inertia
 
 def find_optimal_clusters(inertia_values):
-    """
-    Identify the optimal number of clusters using the Elbow Method.
-    
-    Parameters:
-        inertia_values (list): List of inertia values for each k (1 to max_k).
-        
-    Returns:
-        int: Optimal number of clusters (k).
-    """
     n = len(inertia_values)
     if n < 3:
         raise ValueError("At least three values are required to compute the elbow point.")
