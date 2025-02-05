@@ -12,3 +12,5 @@ Elbow Method: Determines the optimal number of clusters by identifying the "elbo
 Silhouette method: It measures how well each point fits within its assigned K-Means cluster by comparing intra-cluster cohesion to inter-cluster separation, with scores ranging from -1 (misclassified) to 1 (well-clustered).
 
 The fit_transform method combines the steps of fitting the K-means model (finding centroids) and transforming the data into distances from those centroids in one go.
+
+The get_feature_names_out in KMeansTransformer generates feature names for K-Means clusters, returning names like "kmeans0", "kmeans1", etc., based on the number of clusters. 
