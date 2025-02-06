@@ -14,3 +14,5 @@ Silhouette method: It measures how well each point fits within its assigned K-Me
 The fit_transform method combines the steps of fitting the K-means model (finding centroids) and transforming the data into distances from those centroids in one go.
 
 The get_feature_names_out in KMeansTransformer generates feature names for K-Means clusters, returning names like "kmeans0", "kmeans1", etc., based on the number of clusters. 
+
+new branch
